@@ -1,4 +1,99 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;600");
+
 .App {
   font-family: sans-serif;
   text-align: center;
+  color: #1b1d28;
+}
+
+.header {
+  display: flex;
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  width: 100%;
+  max-width: 630px;
+  align-items: center;
+  /* ↓これ便利 */
+  margin: auto;
+  padding: 8px;
+  color: #fff;
+  font-weight: bold;
+  font-family: "Poppins", sans-serif;
+}
+
+.header-title {
+  font-weight: bold;
+  font-size: 20px;
+  letter-spacing: 1.5px;
+}
+
+.headerNav {
+  margin-left: auto;
+}
+
+.headerNav-item {
+  color: #fff;
+  text-decoration: none;
+}
+
+.hero {
+  background: #1b1d28;
+  color: #fff;
+  padding: 140px 0 120px;
+}
+
+.hero-title {
+  font-size: 36px;
+  font-weight: bold;
+  font-family: "Poppins", sans-serif;
+}
+
+.hero-description {
+  font-size: 18px;
+  letter-spacing: 0.5px;
+}
+
+.section {
+  max-width: 630px;
+  margin: 32px auto;
+  padding: 0 15px;
+}
+
+.section-title {
+  color: #b6b6ba;
+  font-size: 24px;
+  font-weight: bold;
+  text-align: left;
+}
+
+.section-description {
+  font-size: 14px;
+  line-height: 1.8;
+}
+
+.workItem {
+  margin: 16px 0;
+}
+
+.workItem-category {
+  font-size: 12px;
+  font-family: "Poppins", sans-serif;
+  color: #4caf50;
+  line-height: 1;
+  letter-spacing: 0.5px;
+  margin: 6px 0 2px;
+}
+
+.workItem-title {
+  font-weight: bold;
+}
+
+.footer {
+  background: #1b1d28;
+  color: #fff;
+  font-size: 12px;
+  text-align: center;
+  padding: 12px 0;
 }
