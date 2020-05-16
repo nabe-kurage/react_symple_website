@@ -1,6 +1,8 @@
 import React from "react";
 import styled from "styled-components";
 
+import { Link } from "react-router-dom";
+
 const Base = styled.header`
   display: flex;
   position: absolute;
@@ -18,19 +20,22 @@ const Base = styled.header`
   font-family: "Poppins", sans-serif;
 `;
 
-const Title = styled.h1`
+const Title = styled(Link)`
   font-weight: bold;
   font-size: 20px;
   letter-spacing: 1.5px;
+  text-decoration: none;
+  color: #fff;
 `;
 
 const Nav = styled.nav`
   margin-left: auto;
 `;
 
-const NavItem = styled.a`
+const NavItem = styled(Link)`
   color: #fff;
   text-decoration: none;
+  padding: 4px;
 `;
 
 const Header = () => {
@@ -38,8 +43,9 @@ const Header = () => {
     <Base>
       <Title>Portfolio</Title>
       <Nav>
-        <NavItem href="#about">About</NavItem>
-        <NavItem href="#works">Works</NavItem>
+        <NavItem to="/">About</NavItem>
+        <NavItem to="/">Works</NavItem>
+        <NavItem to="/contact">Contact</NavItem>
       </Nav>
     </Base>
   );
